@@ -1,0 +1,13 @@
+name: Lastname-workflow #makesure to change the lastname here
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo something
+        run: echo "Hello Deloitte DevOps Aspirants"
+      - name: Multiline Commands
+        run: |
+          node -v
+          npm -v
